@@ -17,5 +17,5 @@ COPY composer.json .
 #RUN composer install --no-scripts
 ONBUILD RUN composer update
 COPY . .
-CMD php artisan serve --host=0.0.0.0:80
+CMD php artisan serve 
 
